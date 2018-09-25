@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {UsersService} from "./users.service";
-import {OnInit} from "@angular/core";
+import {UsersService} from './users.service';
+import {OnInit} from '@angular/core';
 
 @Component({
     selector: 'app-root',
@@ -19,7 +19,7 @@ export class AppComponent {
     ngOnInit() {
        // this.users = this.usersService.users
         this.usersService.getUsers().subscribe(users => {
-            console.log(users)
+            this.users = users;
         } );
 
     }

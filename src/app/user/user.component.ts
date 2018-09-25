@@ -1,7 +1,8 @@
 import {Component, Input} from '@angular/core';
+import {UsersService} from '../users.service';
 
-@Component ({
-  selector: 'app-user',
+@Component({
+    selector: 'app-user',
     templateUrl: 'user.component.html',
     styleUrls: ['user.component.scss']
 
@@ -9,5 +10,8 @@ import {Component, Input} from '@angular/core';
 
 export class UserComponent {
 
-  @Input() user;
+    @Input() user;
+
+    constructor() {}
+
 }
